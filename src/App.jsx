@@ -1,15 +1,10 @@
 import { NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { Profile } from "./components/Profile"
+import { Messages } from "./components/Messages";
+import { Settings } from "./components/Settings";
 
-const Profile = () => {
-  return <h1>Профиль</h1>;
-};
-const Messages = () => {
-  return <h2>Сообщения</h2>;
-};
-const Settings = () => {
-  return <h2>Страница с настройками</h2>;
-};
+
 
 function App() {
   return (
@@ -30,6 +25,7 @@ function App() {
         </div>
         <div className="col-md-9">
           <Routes>
+            <Route path="/" element={<h2> D Вы в личном кабинете</h2>} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/messages" element={<Messages />} />
             <Route path="/settings" element={<Settings />} />
