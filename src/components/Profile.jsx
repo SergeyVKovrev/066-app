@@ -1,4 +1,8 @@
 export const Profile = () => {
+  const familyStyle = {
+    color: "blue",
+    fontSize: "1.2rem",
+  };
   return (
     <div className="row">
       <div className="col-md-4">
@@ -18,10 +22,10 @@ export const Profile = () => {
           <span>vania@mail.ru</span>
         </p>
         <p>
-          <span>Фамилия имя: </span>
+          <span style={familyStyle}>Фамилия имя: </span>
           <span>Иван Иванов</span>
         </p>
-        <p>Рассказ о себе</p>
+        <p style={{ color: "red", fontSize: "1.5rem" }}>Рассказ о себе</p>
       </div>
     </div>
   );
